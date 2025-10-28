@@ -1,6 +1,6 @@
 import ArtGalleryPhotos from "@/components/ui/art_gallery/ArtGalleryPhotos";
 import { getGalleryPictures } from "@/lib/cmsdata";
-import ArtGalleryClient from "@/components/ui/art_gallery/ArtGalleryClient";
+import AddArtFloatingButton from "@/components/ui/art_gallery/AddArtFloatingButton";
 import CTAButton from "@/components/ui/CTAButton";
 import { RiImageAddFill } from "react-icons/ri";
 
@@ -32,7 +32,7 @@ export default async function ArtGallery() {
       ) : (
         <ArtGalleryPhotos pictures={pictures} />
       )}
-      <ArtGalleryClient href={NEW_ART_FORM_URL}/>
+      <AddArtFloatingButton href={NEW_ART_FORM_URL}/>
     </main>
   );
 }

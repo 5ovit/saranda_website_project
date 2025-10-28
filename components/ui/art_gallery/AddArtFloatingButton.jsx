@@ -5,7 +5,7 @@ import { RiImageAddFill } from "react-icons/ri";
 import Link from "next/link";
 import { twJoin } from "tailwind-merge";
 
-export default function ArtGalleryClient({href="#", className, ...props}) {
+export default function AddArtFloatingButton({href="#", className, ...props}) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
