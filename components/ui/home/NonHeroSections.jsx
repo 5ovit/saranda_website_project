@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mist_forest_img from "@/public/images/mist_forest2.png";
-import lone_tree_img from "@/public/images/lone_tree.png";
 import { twJoin } from "tailwind-merge";
+import LoneTreeSlidingAnimation from "@/components/gsapanimations/LoneTreeSlidingAnimation";
 
 export default function NonHeroSections({
   className = "",
@@ -14,7 +14,7 @@ export default function NonHeroSections({
         "relative",
         className
       )}
-      id="landing_page_sections_id"
+      id="non_hero_sections_id"
       {...props}
     >
       <div
@@ -30,19 +30,7 @@ export default function NonHeroSections({
           className="object-cover w-screen h-screen sticky top-0"
         ></Image>
       </div>
-      <div
-        className="absolute inset-0 portrait:hidden"
-      >
-        <Image
-          src={lone_tree_img}
-          alt=""
-          sizes="100vw"
-          className="
-            object-fill w-screen h-screen sticky top-0
-          "
-          id="lone_tree_img_id"
-        ></Image>
-      </div>
+      <LoneTreeSlidingAnimation/>
       {children}
     </main>
   </>
