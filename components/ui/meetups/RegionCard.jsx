@@ -23,6 +23,7 @@ export default function RegionCard({ region, imageSrc, isLast, isHovered, onHove
           src={imageSrc}
           alt={`${region} region`}
           fill
+          placeholder="blur"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
