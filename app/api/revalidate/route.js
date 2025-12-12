@@ -15,11 +15,10 @@ export async function POST(req) {
   const revalidationPaths = {
     "team": ["/know_us"],
     "artphotos": ["/art_gallery"],
-    "artphotos": ["/art_gallery"],
     "event": ["/events", "/events/past", "/events/current", "/meetups"],
     "meetup": [`/meetups/${data.region}`],
     "featuredphotos": ["/"],
-    "linktre": ["/links"],
+    "linktree": ["/links"],
     "community": ["/", `/community/${data.slug}`],
     "extra_footer_links": ["/"],
   }
